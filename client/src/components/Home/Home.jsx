@@ -61,7 +61,7 @@ const Home = () => {
     function handleInputName(e) {
         setSearch(e.target.value)
     }
-    // console.log(types)
+    console.log(currentRecipes)
     return (
         <div className={styles.container}>
             <nav className={styles.navbar}>

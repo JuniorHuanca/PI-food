@@ -31,7 +31,7 @@ export const getRecipeByID = (id) => {
 }
 export const getRecipesByName = (name) => {
     return function (dispatch) {
-        axios.get(`http://localhost:3001/recipes/?name=${name}`)
+        axios.get(`http://localhost:3001/recipes?name=${name}`)
             .then((json) => {
                 return dispatch({
                     type: GET_RECIPES_BY_NAME,

@@ -50,25 +50,5 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.delete('/', async (req, res) =>{
-    const {id} = req.body
-    try {
-        const recipe = await Recipe.findByPk(id)
-        recipe.destroy()
-        res.status(200).send('deleted')
-    } catch (error) {
-        res.status(200).send('deleted')
-    }
-})
-
-router.put('/', async (req, res) =>{
-    const {id, summary, value} = req.body
-    try {
-        const recipe = Recipe.findByPk(id)
-        await recipe.update({[summary]: value})
-    } catch (error) {
-        
-    }
-})
 
 module.exports = router
