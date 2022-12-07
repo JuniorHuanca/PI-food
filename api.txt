@@ -1,0 +1,2 @@
+https://api.spoonacular.com/recipes/complexSearch?apiKey=f0b71069a69f4c1f9085cbfdbf1327d5&addRecipeInformation=true&number=100 || getApiInfo
+https://api.spoonacular.com/recipes/complexSearch?query=${name}&addRecipeInformation=true&number=100&apiKey=${FOOD_API_KEY}`) || getInfoByname
