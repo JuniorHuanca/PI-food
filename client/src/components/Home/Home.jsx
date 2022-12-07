@@ -57,6 +57,7 @@ const Home = () => {
         e.preventDefault(e)
         dispatch(getRecipesByName(search))
         setSearch('')
+        setCurrentPage(1);
     }
     function handleInputName(e) {
         setSearch(e.target.value)
